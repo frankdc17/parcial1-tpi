@@ -27,7 +27,30 @@
     </xs:restriction>
   </xs:simpleType>  
   
-  
+  <!--III.1.3 Definicion tipo cantidades-->
+    <xs:simpleType name="cantidades">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="499"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+    <!--III.1.3 Restriccion de cantidades-->
+    <xs:simpleType name = "restDui">
+      <xs:restriction base="xs:string">
+      <xs:length value="10"/>
+    </xs:restriction>
+    </xs:simpleType>
+    
+     <!--III.1.3 Referencia-->
+    <xs:element name="divisa">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="moneda" type="xs:string"/>
+                          <xs:element name="valor" type="xs:double"/>
+                        </xs:sequence>  
+                      </xs:complexType>  
+    </xs:element>
   
   <xs:element name="registro" >
     <xs:complexType>
@@ -61,11 +84,11 @@
                           <xs:element name="dui">
                             <xs:complexType>
                               <xs:simpleContent>
-                                <xs:extension base="xs:string">
-                                  <xs:attribute name="vence" type="xs:string" use="optional" />
+                                <xs:extension base="restDui">
+                                  <xs:attribute name="vence" type="xs:date" use="optional" />
                                 </xs:extension>
                               </xs:simpleContent>
-                            </xs:complexType>                          
+                            </xs:complexType>
                           </xs:element>
                           
                           <xs:element name="pasaporte">
@@ -139,13 +162,13 @@
                     
                     <xs:element name="detalle"/>
                     
-                    <xs:element name="cantidad"/>
+                    <xs:element name="cantidad" type="cantidades"/>
                     
                     <xs:element name="precio">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="moneda"/>
-                          <xs:element name="valor"/>
+                          <xs:element name="moneda" type="xs:string"/>
+                          <xs:element name="valor" type="xs:double"/>
                         </xs:sequence>  
                       </xs:complexType>  
                     </xs:element>
@@ -153,8 +176,8 @@
                     <xs:element name="subtotal">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="moneda"/>
-                          <xs:element name="valor"/>
+                          <xs:element name="moneda" type="xs:string"/>
+                          <xs:element name="valor" type="xs:double"/>
                         </xs:sequence>  
                       </xs:complexType>  
                     </xs:element>
