@@ -23,4 +23,18 @@
 <!--Factura 6-->
 <factura tipo="credito"><num>585</num><cliente codigo="5327" sexo="masculino"><nombre>Jhon Smith</nombre><documento><dui vence="2018-06-03">02810867-0</dui></documento><telefono tipo="celular" cia="tigo">78923546</telefono><email>jsmith@yahoo.com</email></cliente><direccion depto="La Libertad" municipio="Santa Tecla"><oficina>Final 25 Av. Norte</oficina></direccion><lineafactura factura="575"><codigo tipo="accesorio_pc">247</codigo><detalle>Mouse inalámbrico</detalle><cantidad>10</cantidad><precio><moneda>$</moneda><valor>10.00</valor></precio><subtotal><moneda>$</moneda><valor>100.00</valor></subtotal></lineafactura><total><moneda>$</moneda><valor>100.00</valor></total></factura>
 
+<!--Facturas agregadas-->
+
+<!--Factura 7-->
+<factura tipo="final"><num>592</num><cliente codigo="500" sexo="femenino"><nombre>Michelle Cortez</nombre><documento><pasaporte pais="SLV">A4425654</pasaporte></documento><telefono tipo="celular" cia="tigo">75216585</telefono><email>mcortez@gmail.com</email></cliente><lineafactura factura="535"><codigo tipo="perecedero">213</codigo><detalle>Soda enbotellada</detalle><cantidad>20</cantidad><precio><moneda>$</moneda><valor>0.45</valor></precio><subtotal><moneda>$</moneda><valor>4.60</valor></subtotal></lineafactura><total><moneda>$</moneda><valor>4.60</valor></total></factura>
+
+<!--Factura 8-->
+<factura tipo="final"><num>597</num><cliente codigo="617" sexo="masculino"><nombre>Miguel Rosario</nombre><documento><pasaporte pais="USA">A40292236</pasaporte></documento><telefono tipo="celular" cia="movistar">75632145</telefono><email>mross@hotmail.com</email></cliente><lineafactura factura="550"><codigo tipo="perecedero">300</codigo><detalle>Jugo Enlatado</detalle><cantidad>10</cantidad><precio><moneda>$</moneda><valor>0.70</valor></precio><subtotal><moneda>$</moneda><valor>7.00</valor></subtotal></lineafactura><total><moneda>$</moneda><valor>7.00</valor></total></factura>
+
+<!--Factura 9-->
+<factura tipo="credito"><num>565</num><cliente codigo="5317" sexo="femenino"><nombre>Maria Ortiz</nombre><documento><pasaporte pais="USA">A92589234</pasaporte></documento><telefono tipo="celular" cia="tigo">78923546</telefono><email>usermari@hotmail.com</email></cliente><direccion depto="La Libertad" municipio="Santa Tecla"><oficina>Final 25 Av., calle las amapola</oficina></direccion><lineafactura factura="545"><codigo tipo="accesorio_pc">247</codigo><detalle>Teclado inalámbrico</detalle><cantidad>30</cantidad><precio><moneda>$</moneda><valor>10.00</valor></precio><subtotal><moneda>$</moneda><valor>300.00</valor></subtotal></lineafactura><total><moneda>$</moneda><valor>300.00</valor></total></factura>
+
+<!--Factura 10-->
+<factura tipo="credito"><num>589</num><cliente codigo="5896" sexo="femenino"><nombre>Rosa Merino</nombre><documento><dui vence="2021-09-03">03840867-0</dui></documento><telefono tipo="celular" cia="claro">78923546</telefono><email>rosamer@gmail.com</email></cliente><direccion depto="La Libertad" municipio="Santa Tecla"><oficina>Final 25 Av. Sur</oficina></direccion><lineafactura factura="555"><codigo tipo="accesorio_pc">247</codigo><detalle>monitor</detalle><cantidad>1</cantidad><precio><moneda>$</moneda><valor>30.00</valor></precio><subtotal><moneda>$</moneda><valor>30.00</valor></subtotal></lineafactura><total><moneda>$</moneda><valor>30.00</valor></total></factura>
+
 </registro>
